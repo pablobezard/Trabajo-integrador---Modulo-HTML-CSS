@@ -423,12 +423,16 @@ box-shadow: 0 5px 20px rgba(0,0,0,0.2);
  margin-bottom: 0;
 }
 }
+
+.contenedor p{
+    color: rgb(80, 80, 80);
+}
  
 .contenedor p, 
 .contenedor h2{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-   margin-top:50px ;
+    margin-top:50px ;
    }
 
 
