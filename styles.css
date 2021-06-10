@@ -27,7 +27,7 @@ li, a, button {
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding: 30px 10%;
+    padding: 20px 10%;
     background:rgb(79, 39, 1);
 }
 
@@ -84,6 +84,11 @@ button:hover{
 .titulo_principal{
     text-align: center;
 }
+
+.login{
+   margin: 10px;
+}
+
 
 
 
@@ -153,6 +158,8 @@ button:hover{
 }
 
 
+
+
 /*cards*/ 
 
 .titulo{
@@ -220,7 +227,7 @@ box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 .container .card .content {
     position: relative;
     margin-top: -140px;
-    padding:  10px 15px;
+    padding:  10px 45px;
     text-align:  center;
     color: rgb(0, 0, 0);
     visibility: hidden;
@@ -385,7 +392,7 @@ box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 @media (min-width: 768px) {
     .nosotros {
         
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
         
      }
@@ -461,54 +468,57 @@ footer{
     font-family: "Openn Sans";
     padding-top: 40px;
     color: #fff;
+   
+   
   
 }
 
 .footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
     backdrop-filter: blur(1.5px);
-   
+    background-color: rgba(0, 0, 0, 0.616);
 }
 
 
 .footer-content h3 {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1rem;
     text-transform: capitalize;
     line-height: 3rem;
 
 }
 
 .footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
+    margin: 5px auto;
     line-height: 28px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 1rem 0 3rem 0 ;
+ .content-social{
+     grid-template-columns: 2 / 3;
+     grid-row: -3 / -2;
+ }
 
+  .socials{
+    list-style: none;
+    margin: 1rem 0 3rem 0 ;
+    
 }
 
 .socials li{
     margin: 0 10px;
 }
 
-.socials a{
+ .socials a{
     text-decoration: none;
     color: #fff;
 }
 
+
 .socials a i{
-    font-size: 1.1rem;
+    margin: 30px;
+    font-size: 5rem;
     
 }
 
@@ -518,14 +528,11 @@ footer{
 
 .footer-bottom{
     background:rgb(79, 39, 1);
-    width: 100%;
-    padding: 20px 0 ;
-    text-align: center;
 }
 
 .footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
+    font-size: 10px;
+    word-spacing: 3px;
     text-transform: capitalize;
     
 }
@@ -534,4 +541,12 @@ footer{
     text-transform: uppercase;
     opacity: .4 ;
     font-weight: 200;
+}
+
+ .text-footer{
+    grid-template-columns: 1 / 2;
+    grid-row: -2 / -3;
+    text-align: left;
+    padding-left: 30px ;
+    
 }
